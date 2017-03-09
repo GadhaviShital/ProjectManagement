@@ -1,0 +1,105 @@
+
+<h1>Record Your Income & Expences !!!</h1>
+<style>
+table {
+    width:75%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table th {
+    background-color:#CCC;
+    color: white;
+}
+</style>
+
+
+	<table>			
+		<tr>
+			<th>
+				<label for = "Income"> Income </label>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<label for = "clientname"> Client Name </label>
+			</th>
+			<td>
+				<select id = "Client Name"> 
+					<option value ="clientname1" > Pointer Inc </option>
+					<option value ="clientname2" > Philips teletrol </option>
+					<option value ="clientname3" > BAE System </option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for = "Date">Date </label>
+			</th>
+			<td>
+				<input type = "Date" name ="Date" id="Date"></input>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for = "Revenuetype"> Revenue Type </label>
+			</th>
+			<td>
+				<input type = "text" name ="Revenue Type" id="Revenuetype"></input>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for = "RevenueAmount">Revenue Amount</label>
+			</th>
+			<td>
+				<input type = "text" name ="Revenue Amount" id="RevenueAmount"></input>
+			</td>
+		</tr>
+	
+		<tr>
+			<th>
+				<label for = "Expences">Expences</label>	
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<label for = "Date">Date </label>
+			</th>
+			<td>
+				<input type = "Date" name ="Date" id="Date"></input>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for = "description">Description</label>						
+			</th>
+			<td>
+				<input type ="text" name="Description" id="description"></input>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for = "Amount">Amount</label>
+			</th>
+			<td>
+				<input type = "Amount" name ="Amount" id="Amount"></input>
+			</td>
+		</tr>
+		</table>
+	<input type = "button" class ="testbutton" value = "Save & Add New"></input>
+	<input type= "button" class ="testbutton" value ="Save & Close"></input>
+	<input type = "button" class ="testbutton" value = "Cancel"></input>
+	
+</form>

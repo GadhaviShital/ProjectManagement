@@ -1,0 +1,64 @@
+<form method="post" action="//submit.form" onSubmit="return validateForm();">
+	<div style="width: 400px;">
+	</div>
+	<div style="padding-bottom: 18px;font-size : 21px;">Report an issue</div>
+	<div style="padding-bottom: 18px;">Reported by<span style="color: red;"> *</span><br/>
+		<input type="text" id="data_1" name="data_1" style="width : 450px;" class="form-control"/>
+	</div>
+	<div style="padding-bottom: 18px;">Severity<br/>
+		<select id="data_2" name="data_2" style="width : 300px;" class="form-control"><option>Critical</option>
+			<option>Major</option>
+			<option>Moderate</option>
+			<option>Minor</option>
+			<option>Cosmetic</option>
+		</select>
+	</div>
+	<div style="padding-bottom: 18px;">Priority<br/>
+		<select id="data_3" name="data_3" style="width : 300px;" class="form-control"><option>Low</option>
+			<option>Midium</option>
+			<option>High</option>
+		</select>
+	</div>
+	<div style="padding-bottom: 18px;">Reproducibility<br/>
+		<select id="data_7" name="data_7" style="width : 300px;" class="form-control"><option>10%</option>
+			<option>25%</option>
+			<option>50%</option>
+			<option>75%</option>
+			<option>100%</option>
+			</select>
+	</div>
+	<div style="padding-bottom: 18px;">Summary<span style="color: red;"> *</span><br/>
+		<input type="text" id="data_4" name="data_4" style="width : 450px;" class="form-control"/>
+	</div>
+	<div style="padding-bottom: 18px;">Description<br/>
+		<textarea id="data_5" ${readonly} name="data_5" style="width : 450px;" rows="6" class="form-control"></textarea>
+	</div>
+	<div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+	<div>
+	<div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+		<script src="https://www.100forms.com/js/FORMKEY:W5APRA5ALUHB/SEND:my@email.com" type="text/javascript"></script>
+	</div>
+	</form>
+
+	<script type="text/javascript">
+		function validateForm() 
+		{
+			if (isEmpty(document.getElementById('data_1').value.trim()))
+		{
+			alert('Reported by is required!');
+			return false;
+		}
+			if (isEmpty(document.getElementById('data_4').value.trim()))
+		{
+			alert('Summary is required!');
+			return false;
+		}
+			return true;
+		}
+			function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+			function validateEmail(email) 
+		{
+			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+			return isEmpty(email) || re.test(email);
+		}
+	</script>

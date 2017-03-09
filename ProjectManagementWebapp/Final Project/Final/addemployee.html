@@ -1,0 +1,146 @@
+
+<h1>Add Employee Details</h1>
+<style>
+table {
+    width:75%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table th {
+    background-color:#CCC;
+    color: white;
+}
+ </style>		
+
+
+	<table >			
+		<tr>
+			<th>
+				<label for = "firstname">First </label>
+			</th>
+			<td>
+				<input type = "text" name="First Name" id="firstname"></input>
+			</td>
+			
+		</tr>
+		<tr>
+			<th>
+				<label for = "lastname">Last Name</label>						
+			</th>
+			<td>
+				<input type ="text" name="Last Name" id="lastname"></input>
+			</td>
+			
+		</tr>
+		<tr>
+			<th>
+				<label for = "EmailID">Email ID </label>
+			</th>
+			<td>
+				<input type = "email" name ="EmailID" id="EmailID"></input>
+			</td>
+			
+		</tr>
+		<tr>
+			<th>
+				<label for = "reportto"> Report to</label>
+			</th>
+			<td>
+				<select id = "reportto">
+					<option value ="project manager"> Mr.David Pitts</option>
+					<Option value ="project manager 1"> Mr. Vladimir Riabov</option>
+					<option value ="project manager 2"> Mr.Selent Douglas</option>
+					<option Value ="project manager 3"> Mr. Robert Schafer</option>
+				</select>
+			</td>
+			
+		</tr>
+		<tr>
+			<th>
+				<label for = "skillset"> Skill Set</label>
+			</th>
+			<td>
+				<input type ="text" name="Skill Set" id="Skillset"></input>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for = "department"> Department </label>
+			</th>
+			<td>
+				<select id = "department"> 
+					<option value = "department"> Finance </option>
+					<option value = "department1"> Sales </option>
+					<option value = "department2"> Human Resource </option>
+					<option value = "department3"> IT</option>
+					<option value = "department4"> Quality assurance</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for = "designation"> Designation </label>
+			</th>
+			<td>
+				<select id="designation">
+					<option value = "business Analyst"> Business Analyst </option>
+					<option value ="team leader"> Team Leader	</option>
+					<option value= "developer">  Developer </option>
+					<option value = "tester"> Tester </option>
+					<option value = "quality analyst"> Quality Analyst</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for = "Experience"> Experience</label>
+				
+			</th>
+			<td>
+				<select id = "Experience"  > 
+					<option value ="1" > 1 year</option>
+					<option value ="2" > 2 years</option>
+					<option value ="3" > 3 years</option>
+					<option value ="4" > 4 years</option>
+					<option value ="5" > 5 years</option>
+					<option value ="6" > 6 years</option>
+					<option value ="7" > 7 years</option>
+					<option value ="8" > 8 years</option>
+					<option value ="9" > 9 years</option>
+					<option value ="10" > 10 years</option>
+					<option value ="10+" > 10+ years</option>
+				</select>
+			
+				<select id ="Experience">
+					<option value ="1" > 1 Month </option>
+					<option value ="2" > 2 Months</option>
+					<option value ="3" > 3 Months</option>
+					<option value ="4" > 4 Months</option>
+					<option value ="5" > 5 Months</option>
+					<option value ="6" > 6 Months</option>
+					<option value ="7" > 7 Months</option>
+					<option value ="8" > 8 Months</option>
+					<option value ="9" > 9 Months</option>
+					<option value ="10" > 10 Months</option>
+					<option value ="11" > 11 Months </option>
+				</select>
+			</td>	
+		</tr>
+	</table>
+	<input type = "button" class = "testbutton" value = "Save & Add New"></input>
+	<input type= "button" class = "testbutton"value ="Save & Close"></input>
+	<input type = "button" class = "testbutton"value = "Cancel"></input>
+	
+</form>

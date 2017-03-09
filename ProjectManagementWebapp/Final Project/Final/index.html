@@ -1,0 +1,100 @@
+<!doctype html>
+
+<head>
+	<link href="JQuery/jquery-ui.css" rel="stylesheet">
+	<link href="JQuery/jquery-ui.theme.css" rel="stylesheet">
+	<link href="JQuery/jquery-ui.structure.css" rel="stylesheet">
+	<script src="JQuery/jquery.min.js"></script>
+	<script src="JQuery/jquery-ui.min.js"></script>
+	<script src="menu.js"></script>
+	<link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.3.1118/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.3.1118/styles/kendo.material.min.css" />
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.3.1118/styles/kendo.material.mobile.min.css" />
+
+    <script src="http://kendo.cdn.telerik.com/2016.3.1118/js/kendo.all.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.3.1118/js/kendo.timezones.min.js"></script>
+	<script src="create_project.js"></script>
+	<script>
+		$(function() {
+			$("#top").load("menu.html");
+		});
+		$(function(){
+			$("#top").load("menu.html");
+			});
+	</script>
+	
+	<title> Project Portfolio Management System</title>
+	<link rel= "stylesheet"type="text/css" href="style/global.css">
+</head>
+<body>
+	<div id="header">
+		<div class = "logo"><a href = "#" ><span> Beas</span></a></div>
+		<h1 class = "heading" > <a href ="#" ><center> <span> Project Portfolio Management System </span></center></a></h1>
+	</div>
+
+<nav id="main-nav">
+		<div class="dropdown"  style="float:right;">
+			
+			
+			<button class="dropbtn">Alert</button>
+			<button class ="dropbtn1">Login </button>
+			
+				<div class="dropdown-content">
+					<a href="#">New Message</a>
+					<a href="#">New Task</a>
+								
+				</div>
+		</div>
+</nav>
+<div id="main-content">
+	<div class = "navigation">
+		<ul class = "mainmenu ">
+			<li><a href ="#" >Dashboard</a></li>
+	 		<li><a href ="#" >Project </a>
+				<ul class="submenu"> 
+					<li><a href="#createproject" onClick ="loadAddProject()">Create Project</a></li>
+					<li><a href="#viewproject"onClick ="viewProject()">View Project</a></li>
+				</ul>			
+			</li>
+			<li><a href ="#" >Employee </a>
+				<ul class="submenu"> 
+					<li><a href="#addemployee" onClick ="addEmployee()">Add Employee</a></li>
+					<li><a href="#viewemployee"onClick ="viewEmployee()">View Employee</a></li>
+				</ul>
+			</li>
+				
+			<li><a href ="#" >Task </a>
+				<ul class='submenu'> 
+					<li><a href="#createtask" onClick ="addTask()">Create Task</a></li>
+					<li><a href="#viewtask"onClick ="viewTask()">View Task</a></li>
+				</ul>
+			</li>
+				
+			<li><a href ="#" >Budget </a>
+				<ul class='submenu'> 
+					<li><a href="#createbudget" onClick ="addBudget()">Create Budget</a></li>
+					<li><a href="#viewbudget"onClick ="viewBudget()">View Budget</a></li>
+				</ul>
+			</li>
+				
+			<li><a href ="#" >Client </a>
+				<ul class='submenu'> 
+					<li><a href="#createclient" onClick ="addClient()">Add client</a></li>
+					<li><a href="#viewclient"onClick ="viewClient()">View Client</a></li>
+				</ul>
+			</li>
+			<li><a href ="#" >Report </a>	
+				<ul class='submenu'> 
+					<li><a href="#createreport" onClick ="report()">View Report</a></li>
+					
+				</ul>
+			</li>
+			<li><a href="#createcalender" onClick ="calender()">Calender</a> </li>
+			
+		</ul>
+	</div>
+
+	<div id="middle"/>	
+</div>
+</body>
+</html>

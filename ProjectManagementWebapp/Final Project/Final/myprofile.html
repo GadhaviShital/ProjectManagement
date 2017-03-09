@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Profile</title>
+<style>
+	div {
+		margin-bottom :5px;
+	}
+	label
+	{
+		background-color= #3385ff;
+		display:block;
+		float: left;
+		width:150px
+		text-align: center;
+		font-weight:bold;
+		margin-right:10px
+	}
+	input.submit 
+	{
+		margin-left:160px
+	}
+	</style>
+</head>
+<body>
+	<h1> My Profile </h1>
+	<form action = "/form-processing-script" method = "post">
+		<div>
+			<table style = "width :75%; border: 1px solid blue; cellpadding :10px; cellspacing : 10px;" >			
+				<tr>
+					<td>
+						<label for = "firstname">First Name</label>
+					</td>
+					<td>
+						<input type = "text" name="First Name" id="firstname">
+					</td>
+					<td>
+						<label for = " emailID">Email ID </label>
+					</td>
+					<td>
+						<input type = "email" name ="EmailID" id="EmailID">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "lastname">Last Name</label>						
+					</td>
+					<td>
+						<input type ="text" name="Last Name" id="lastname">
+					</td>
+						<td>
+							<label for = "department"> Department </label>
+						</td>	
+						<td>
+							<select id = "department"> 
+							<option value = "department"> Finance </option>
+							<option value = "department1"> Sales </option>
+							<option value = "department2"> Human Resource </option>
+							<option value = "department3"> IT</option>
+							<option value = "department4"> Quality assurance</option>
+						</td>					
+				</tr>
+				<tr>
+					<td>
+						<label for = "adress1">Address1</label>						
+					</td>
+					<td>
+						<input type ="text" name="adress1" id="Adress1">
+					</td>
+					<td>
+						<label for = "designation"> Designation </label>
+					</td>
+					<td>
+						<select id="designation">
+							<option value = "business Analyst"> Business Analyst </option>
+							<option value ="team leader"> Team Leader	</option>
+							<option value= "developer">  Developer </option>
+							<option value = "tester"> Tester </option>
+							<option value = "quality analyst"> Quality Analyst</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "adress2">Address2</label>						
+					</td>
+					<td>
+						<input type ="text" name="adress2" id="Adress2">
+					</td>
+					<td>
+						<label for = "reoprt to"> Report to</label>
+					</td>
+					<td>
+						<select id = "Report to">
+						<option value ="project manager"> Mr.David Pitts</option>
+						<Option value ="project manager 1"> Mr. Vladimir Riabov</option>
+						<option value ="project manager 2"> Mr.Selent Douglas</option>
+						<option Value ="project manager 3"> Mr. Robert Schafer</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "city">City</label>						
+					</td>
+					<td>
+						<input type ="text" name="city" id="City">
+					</td>
+					<td>
+						<label for = "contact no"> Contact No </label>
+					</td>
+					<td>
+						<input type = "text" name ="Contact No" id= "contact no">
+				</tr>
+				<tr>
+					<td>
+						<label for = "state">State</label>						
+					</td>
+					<td>
+						<input type ="text" name="state" id="State">
+					</td>
+					<td>
+						<label for = "zipcode">Zipcode</label>						
+					</td>
+					<td>
+						<input type ="text" name="zipcode" id="Zipcode">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "country">Country</label>						
+					</td>
+					<td>
+						<input type ="text" name="country" id="Country">
+					</td>
+				</tr>
+				</table>
+				<input type = "button" value = "Save & Update">
+				<input type = "button" value = "Cancel">
+		</div>
+		
+	</form>
+</body>
+</html>
+

@@ -1,0 +1,116 @@
+
+<h1>Add Project Details here!!</h1>
+
+<style>
+table {
+    width:75%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table th {
+    background-color:#CCC;
+    color: white;
+}
+ </style>		
+		<table>
+				<tr>
+					<th>
+						<label> Project Name</label>
+					</th>
+					<td>
+						<input type = "text"> </input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for = "department"> Department </label>
+					</th>
+					<td>
+						<select id = "department"> 
+							<option value = "department"> Finance </option>
+							<option value = "department1"> Sales </option>
+							<option value = "department2"> Human Resource </option>
+							<option value = "department3"> IT</option>
+							<option value = "department4"> Quality assurance</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Description</label>
+					</th>
+					<td>
+						<Input type = "text"> </input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Project Start date </label>
+					</th>
+					<td>
+						<Input type ="Date"></input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Due Start date </label>
+					</th>
+					<td>
+						<Input type ="Date"></input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Status </label>
+					</th>
+					<td>
+						<select id ="status">
+						<option value ="status"> Upcoming</option>
+						<option value = "status"> In Progress </option>
+						<option value = "status"> Completed</option>
+					</td>
+				</tr>
+				
+				<tr>
+					<th>
+						<label> Budget</label>
+					</th>
+					<td>
+						<Input type = "text"> </input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Billing type</label>
+					</th>
+					<td>
+						<Input type = "radio" onclick = "changePriceLabel('fixed')"> Fixed Price </input>
+						<Input type = "radio"  onclick = "changePriceLabel('hourly')"> Hourly Rate </input>
+					</td>
+				</tr>
+				<tr>
+					<th> 
+						<label id="pricelabel">Fixed price</label>
+					</th>
+					<td>
+						<input type = "text" id="price">
+					</td>
+				</tr>
+	</table>
+	<input type = "button" class = "testbutton" value = "Save & Add New"></input>
+	<input type= "button" class = "testbutton" value = "Save & Close"></input>
+	<input type = "button" class = "testbutton" value = "Cancel"></input>
+	
+</form>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="jquery.canvasjs.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			var chart = new CanvasJS.Chart("chartContainer",
+			{
+				theme: "theme2",
+				title:{
+					text: "Projects overview"
+				},
+				data: [
+				{
+					type: "pie",
+					showInLegend: true,
+					toolTipContent: "{y} - #percent %",
+					yValueFormatString: "#0.#,,. Numbers",
+					legendText: "{indexLabel}",
+					dataPoints: [
+						{  y: 15, indexLabel: "Propodes Projects" },
+						{  y: 9, indexLabel: "In Progress Projects" },
+						{  y: 4, indexLabel: "Completed Projects" },
+						{  y: 2, indexLabel: "Hold projects"},
+					
+					]
+				}
+				]
+			});
+			chart.render();
+		})
+	</script>
+	
+</head>
+<body>
+	
+	<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<style>
+table {
+    width:75%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table th {
+    background-color:#CCC;
+    color: white;
+}
+ </style>		
+
+			
+		<table>
+				<tr>
+					<th>
+						<label> Task Name</label>
+					</th>
+					<td>
+						<input type = "text"> </input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Description</label>
+					</th>
+					<td>
+						<Input type = "text"> </input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label>  Start date </label>
+					</th>
+					<td>
+						<Input type ="Date"></input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Due date </label>
+					</th>
+					<td>
+						<Input type ="Date"></input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Status </label>
+					</th>
+					<td>
+						<Input type = "text"></input>
+					</td>
+				</tr>
+				<table>
+				<tr>
+					<th>
+						<label> Duration</label>
+					</th>
+					<td>
+						<Input type = "text"> </input>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Status </label>
+					</th>
+					<td>
+						<select id ="status">
+						<option value ="status"> Upcoming</option>
+						<option value = "status"> In Progress </option>
+						<option value = "status"> Completed</option>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label> Priority </label>
+					</th>
+					<td>
+						<select id = "priority">
+						<option value = "priority"> Low </option>
+						<option value = "priority"> Medium </option>
+						<option value = "priority"> High </option>
+					</td>
+				</tr>
+	</table>
+	<input type = "button" class ="testbutton" value = "Save & Add New"></input>
+	<input type= "button" class ="testbutton" value ="Save & Close"></input>
+	<input type = "button" class ="testbutton" value = "Cancel"></input>
+	
+</form>
